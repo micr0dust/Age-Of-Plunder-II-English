@@ -25,12 +25,12 @@ setblock 105 30 -144 minecraft:air
 title @a times 20 40 20
 scoreboard players set @a puuid 0
 title @a title ["",{"text":"⚑","color":"dark_blue"},{"text":" "},{"translate":"aop.setting.start","bold":true,"color":"black"},{"text":" "},{"text":"⚑","color":"dark_red"}]
-execute @e[tag=cmd,score_rciv=0,score_map=99] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["red1","building"],Team:red}
-execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv=0,score_map=99] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["blue1","building"],Team:blue}
-execute @e[tag=cmd,score_rciv_min=2,score_map=99] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["red1","building"],Team:red}
-execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv_min=2,score_map=99] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["blue1","building"],Team:blue}
-execute @e[tag=cmd,score_rciv=1,score_rciv_min=1,score_map=99] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:500}],Health:500.0f,Tags:["red1","building"],Team:red}
-execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv=1,score_bciv_min=1,score_map=99] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:500}],Health:500.0f,Tags:["blue1","building"],Team:blue}
+execute @e[tag=cmd,score_rciv=0] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["red1","building"],Team:red}
+execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv=0] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["blue1","building"],Team:blue}
+execute @e[tag=cmd,score_rciv_min=2] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["red1","building"],Team:red}
+execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv_min=2] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:200}],Health:200.0f,Tags:["blue1","building"],Team:blue}
+execute @e[tag=cmd,score_rciv=1,score_rciv_min=1] ~ ~ ~ summon minecraft:shulker 42 30 -198 {Color:14,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:500}],Health:500.0f,Tags:["red1","building"],Team:red}
+execute @e[tag=cmd,score_gamemode=0,score_gamemode_min=0,score_bciv=1,score_bciv_min=1] ~ ~ ~ /summon minecraft:shulker 105 30 -135 {Color:11,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:500}],Health:500.0f,Tags:["blue1","building"],Team:blue}
 tp @a[team=blue] 110 26 -127
 tp @a[team=red] 41 25 -216
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ /clone -2 34 -96 6 41 -88 -2 43 -96

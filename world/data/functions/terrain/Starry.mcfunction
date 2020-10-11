@@ -2,7 +2,7 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
-kill @e[tag=building]
+kill @e[tag=barr]
 summon minecraft:shulker 69 30 -135 {Color:8,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:1200}],Health:1200.0f,Tags:["barr","gold","horse","building"],Team:b}
 summon minecraft:shulker 87 30 -144 {Color:8,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:1200}],Health:1200.0f,Tags:["barr","gold","horse","building"],Team:b}
 summon minecraft:shulker 78 30 -144 {Color:8,CustomNameVisible:0,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:1200}],Health:1200.0f,Tags:["barr","tree","horse","building"],Team:b}

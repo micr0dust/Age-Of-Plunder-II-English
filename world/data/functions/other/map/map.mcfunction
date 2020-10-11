@@ -43,4 +43,3 @@ execute @e[tag=red8,r=5] ~ ~ ~ /clone -22 43 -109 -28 50 -115 ~-3 ~ ~-3 replace 
 execute @e[tag=bluew,r=5] ~ ~ ~ /clone -18 43 -152 -10 68 -144 ~-4 ~ ~-4 replace force
 execute @e[tag=redw,r=5] ~ ~ ~ /clone -18 43 -152 -10 68 -144 ~-4 ~ ~-4 replace force
 
-scoreboard players set @e[tag=tester,r=1,c=1] AItest 2

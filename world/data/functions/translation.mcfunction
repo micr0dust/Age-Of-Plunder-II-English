@@ -20,9 +20,12 @@
 #
 #other
 #  |-menu
-#    |-blue
-#    |-red
-#    |-tip
+#  | |-blue
+#  | |-red
+#  | |-tip
+#  |
+#  |-map
+#	 |-barr_tool
 #
 #setting
 #  |-spawn

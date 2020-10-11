@@ -12,7 +12,7 @@ Enter this command to reset the map:
 
 If no one is in the blue team, the blue team will be replaced by AI
 
-Version v2.4a
+Version v2.3b
 
 ---------------------------------
 If the AI cannot be used, please refer to the following reasons.

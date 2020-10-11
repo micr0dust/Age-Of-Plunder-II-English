@@ -21,9 +21,8 @@ gamerule showDeathMessages false
 gamerule naturalRegeneration false
 gamerule spectatorsGenerateChunks false
 setworldspawn 7 4 27
-kill @e[tag=map]
 kill @e[tag=cmd]
-summon armor_stand 65 24 -202 {PersistenceRequired:1,Tags:["cmd"],Invulnerable:1}
+summon armor_stand 44 20 -153 {PersistenceRequired:1,Tags:["cmd"],Invulnerable:1}
 scoreboard objectives add money dummy
 scoreboard players set @e[tag=cmd] money 0
 
@@ -35,29 +34,12 @@ scoreboard players set @e[tag=cmd] terrain 0
 
 scoreboard objectives remove scores
 
-#自訂義地圖顏色
-scoreboard teams add flat
-scoreboard teams add grove
-scoreboard teams add forest
-scoreboard teams add gold
-scoreboard teams add mountain
-scoreboard teams add blue_team
-scoreboard teams add red_team
-
-scoreboard teams option flat color green
-scoreboard teams option grove color dark_red
-scoreboard teams option forest color dark_green
-scoreboard teams option gold color gold
-scoreboard teams option mountain color gray
-scoreboard teams option blue_team color aqua
-scoreboard teams option red_team color red
-
 #起始資源
 scoreboard objectives add org_food dummy
 scoreboard objectives add org_wood dummy
 scoreboard objectives add org_gold dummy
 #-----------------------------------------------------
-scoreboard teams add blue Blue
+scoreboard teams add blue {"translate":"aop.setting.blue"}
 scoreboard teams option blue color blue
 scoreboard teams option blue friendlyfire false
 scoreboard teams option blue collisionRule pushOtherTeams
@@ -66,7 +48,7 @@ scoreboard objectives add bfood dummy
 scoreboard objectives add bgold dummy
 scoreboard objectives add bwood dummy
 #-----------------------------------------------------
-scoreboard teams add red Red
+scoreboard teams add red {"translate":"aop.setting.red"}
 scoreboard teams option red color red
 scoreboard teams option red friendlyfire false
 scoreboard teams option red collisionRule pushOtherTeams
@@ -75,7 +57,7 @@ scoreboard objectives add rfood dummy
 scoreboard objectives add rgold dummy
 scoreboard objectives add rwood dummy
 #----------------------------------------------------
-scoreboard teams add attget Target
+scoreboard teams add attget {"translate":"aop.setting.target"}
 #-----------------------------------------------------
 scoreboard teams add team
 scoreboard teams option team friendlyfire false
@@ -581,12 +563,6 @@ scoreboard players set @e[tag=cmd] can_count 0
 #--樹狀圖選擇
 scoreboard objectives add tree_civ dummy
 scoreboard players set @e[tag=cmd] tree_civ 1024
-#--timer
-scoreboard objectives add timer dummy
-scoreboard players set @e[tag=cmd] timer 0
-#--select_type
-scoreboard objectives add select_type dummy
-scoreboard players set @e[tag=cmd] select_type 0
 
 function noop_cm:stop_music
 

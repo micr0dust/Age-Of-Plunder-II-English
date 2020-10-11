@@ -8,7 +8,7 @@ scoreboard players set @e[tag=rfarm,r=5,c=1] AItest 1
 execute @e[tag=bfarm,r=5,c=1] ~ ~ ~ scoreboard players operation @e[tag=cmd] bkeepfarm = @e[tag=bfarm,r=5,c=1] farm
 execute @e[tag=rfarm,r=5,c=1] ~ ~ ~ scoreboard players operation @e[tag=cmd] rkeepfarm = @e[tag=rfarm,r=5,c=1] farm
 
-fill ~-4 ~0 ~-4 ~4 ~50 ~4 minecraft:air 0 replace
+fill ~-3 ~2 ~-5 ~5 ~27 ~3 minecraft:air 0 replace
 playsound minecraft:entity.enderdragon_fireball.explode block @a[r=15]
 
 execute @e[tag=cmd,score_bkeepfarm_min=1] ~ ~ ~ execute @e[tag=bfarm,c=1,score_AItest_min=1] ~ ~ ~ summon minecraft:shulker ~ ~-1 ~ {Color:11,CustomName:"藍方",CustomNameVisible:1,NoAI:1b,Attributes:[{Name:generic.maxHealth,Base:600}],Health:600.0f,Tags:["blue6","building","horse"],Team:blue}
@@ -29,5 +29,3 @@ scoreboard players set @e[tag=cmd] bkeepfarm 0
 
 scoreboard players set @e[tag=bfarm,r=5,c=1] AItest 0
 scoreboard players set @e[tag=rfarm,r=5,c=1] AItest 0
-
-kill @e[tag=tester,r=1]
