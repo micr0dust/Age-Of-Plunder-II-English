@@ -44,5 +44,6 @@ execute @e[tag=cmd,c=1,score_mode=2,score_mode_min=2] ~ ~ ~ execute @e[tag=red1,
 execute @e[tag=cmd,c=1,score_mode=2,score_mode_min=2] ~ ~ ~ execute @e[tag=red1,c=1] ~ ~ ~ /summon minecraft:armor_stand ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1,Invisible:1,Tags:["rom","v","horse"]}
 execute @e[tag=cmd,c=1,score_mode=2,score_mode_min=2] ~ ~ ~ execute @e[tag=red1,c=1] ~ ~ ~ /summon minecraft:armor_stand ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1,Invisible:1,Tags:["rom","v","horse"]}
 kill @e[tag=npc]
+scoreboard players set @e[tag=cmd] gm 0
 #ai
 

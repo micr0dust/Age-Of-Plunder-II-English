@@ -57,7 +57,7 @@ scoreboard objectives add rfood dummy
 scoreboard objectives add rgold dummy
 scoreboard objectives add rwood dummy
 #----------------------------------------------------
-scoreboard teams add attget target
+scoreboard teams add attget 目標
 #-----------------------------------------------------
 scoreboard teams add team
 scoreboard teams option team friendlyfire false
@@ -84,25 +84,8 @@ scoreboard objectives add redsurrenderc trigger
 scoreboard objectives add info trigger
 scoreboard objectives add suicide trigger
 #建築購買--------------------------------------
-scoreboard objectives add blue1 trigger
-scoreboard objectives add blue2 trigger
-scoreboard objectives add blue3 trigger
-scoreboard objectives add blue4 trigger
-scoreboard objectives add blue5 trigger
-scoreboard objectives add blue6 trigger
-scoreboard objectives add blue7 trigger
-scoreboard objectives add blue8 trigger
-scoreboard objectives add bluew trigger
-
-scoreboard objectives add red1 trigger
-scoreboard objectives add red2 trigger
-scoreboard objectives add red3 trigger
-scoreboard objectives add red4 trigger
-scoreboard objectives add red5 trigger
-scoreboard objectives add red6 trigger
-scoreboard objectives add red7 trigger
-scoreboard objectives add red8 trigger
-scoreboard objectives add redw trigger
+scoreboard objectives add blue_build trigger
+scoreboard objectives add red_build trigger
 
 #指揮中心--------------------------------------
 scoreboard objectives add ra1 trigger
@@ -130,32 +113,18 @@ scoreboard players set @e[tag=cmd] rbslvl 1
 scoreboard objectives add bbslvl dummy
 scoreboard players set @e[tag=cmd] bbslvl 1
 #---升級
-scoreboard objectives add ra5lvl1 trigger
-scoreboard objectives add ra5lvl2 trigger
-scoreboard objectives add ra5lvl3 trigger
-
-scoreboard objectives add ba5lvl1 trigger
-scoreboard objectives add ba5lvl2 trigger
-scoreboard objectives add ba5lvl3 trigger
-
-scoreboard objectives add rb5lvl1 trigger
-scoreboard objectives add rb5lvl2 trigger
-scoreboard objectives add rb5lvl3 trigger
-
-scoreboard objectives add bb5lvl1 trigger
-scoreboard objectives add bb5lvl2 trigger
-scoreboard objectives add bb5lvl3 trigger
+scoreboard objectives add ra5lvl trigger
+scoreboard objectives add ba5lvl trigger
+scoreboard objectives add rb5lvl trigger
+scoreboard objectives add bb5lvl trigger
 #箭塔--------------------------------------
 scoreboard objectives add rtlvl dummy
 scoreboard players set @e[tag=cmd] rtlvl 1
 scoreboard objectives add btlvl dummy
 scoreboard players set @e[tag=cmd] btlvl 1
 #---升級
-scoreboard objectives add r3lvl1 trigger
-scoreboard objectives add r3lvl2 trigger
-
-scoreboard objectives add b3lvl1 trigger
-scoreboard objectives add b3lvl2 trigger
+scoreboard objectives add r3lvl trigger
+scoreboard objectives add b3lvl trigger
 #馬廄--------------------------------------
 scoreboard objectives add ra7 trigger
 scoreboard objectives add ba7 trigger
@@ -172,11 +141,9 @@ scoreboard objectives add bbhlvl dummy
 scoreboard players set @e[tag=cmd] bbhlvl 1
 
 scoreboard objectives add ra7lvl1 trigger
-
 scoreboard objectives add ba7lvl1 trigger
 
 scoreboard objectives add rb7lvl1 trigger
-
 scoreboard objectives add bb7lvl1 trigger
 #射箭場------------------------------------
 scoreboard objectives add ra8 trigger
@@ -189,13 +156,8 @@ scoreboard objectives add brlvl dummy
 scoreboard players set @e[tag=cmd] brlvl 1
 
 
-scoreboard objectives add r8lvl1 trigger
-scoreboard objectives add r8lvl2 trigger
-scoreboard objectives add r8lvl3 trigger
-
-scoreboard objectives add b8lvl1 trigger
-scoreboard objectives add b8lvl2 trigger
-scoreboard objectives add b8lvl3 trigger
+scoreboard objectives add r8lvl trigger
+scoreboard objectives add b8lvl trigger
 
 #市集--------------------------------------
 scoreboard objectives add rws trigger
@@ -353,7 +315,7 @@ scoreboard players set @a followv 0
 
 scoreboard objectives add menu dummy
 scoreboard players set @e[tag=cmd] menu 0
-#0選擇1教學2自訂遊戲3劇情4關於
+#0選擇1教學2自訂遊戲3戰役4關於5挑戰6排名
 
 scoreboard objectives add puuid dummy
 scoreboard players set @a puuid 1
@@ -464,6 +426,9 @@ scoreboard players set @a blind 0
 #--防守計時回合+資源
 scoreboard objectives add resc dummy
 scoreboard players set @e[tag=cmd] resc 0
+#--防守計時
+scoreboard objectives add count_1 dummy
+scoreboard players set @e[tag=cmd] count_1 0
 #--劇情說話分類
 scoreboard objectives add speak dummy
 scoreboard players set @e[tag=cmd] speak 0
@@ -476,9 +441,15 @@ scoreboard players set @e[tag=cmd] dom 0
 #--劇情節數(章數下的細分)
 scoreboard objectives add cls dummy
 scoreboard players set @e[tag=cmd] cls 0
-
-
-
+#--排名頁數
+scoreboard objectives add page dummy
+scoreboard players set @e[tag=cmd] page 1
+#--計時
+scoreboard objectives add count_ dummy
+scoreboard players set @e[tag=cmd] count_ 0
+#--開計
+scoreboard objectives add can_count dummy
+scoreboard players set @e[tag=cmd] can_count 0
 
 function noop_cm:stop_music
 
@@ -510,3 +481,64 @@ function noop_cm:stop_music
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#--winner
+scoreboard objectives add winner dummy
+scoreboard players set @e[tag=cmd] winner 0
+#--碼
+scoreboard objectives add count_code dummy
+scoreboard players set @e[tag=cmd] count_code 0
+#--碼
+scoreboard objectives add count_code2 dummy
+scoreboard players set @e[tag=cmd] count_code2 0
+#--審查
+#gamemode
+scoreboard objectives add gm dummy
+scoreboard players set @e[tag=cmd] gm 0
+#kill blue1
+scoreboard objectives add kdect dummy
+scoreboard players set @e[tag=cmd] kdect 0
+#rescource
+scoreboard objectives add resdect dummy
+scoreboard players set @e[tag=cmd] resdect 0
+#rescource
+scoreboard objectives add resdect_ dummy
+scoreboard players set @e[tag=cmd] resdect_ 0
+#challenging
+scoreboard objectives add challenging dummy
+scoreboard players set @e[tag=cmd] challenging 0
+#count_1 time

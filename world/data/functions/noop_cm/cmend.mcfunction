@@ -38,46 +38,12 @@ scoreboard players enable @a envirsound
 scoreboard players enable @a bgm
 scoreboard players enable @a tool_range
 #----------------------------------------------
-scoreboard players set @a blue1 0
-scoreboard players set @a blue2 0
-scoreboard players set @a blue3 0
-scoreboard players set @a blue4 0
-scoreboard players set @a blue5 0
-scoreboard players set @a blue6 0
-scoreboard players set @a blue7 0
-scoreboard players set @a blue8 0
-scoreboard players set @a bluew 0
+scoreboard players set @a blue_build 0
+scoreboard players set @a red_build 0
 
+scoreboard players enable @a[team=blue] blue_build
 
-scoreboard players set @a red1 0
-scoreboard players set @a red2 0
-scoreboard players set @a red3 0
-scoreboard players set @a red4 0
-scoreboard players set @a red5 0
-scoreboard players set @a red6 0
-scoreboard players set @a red7 0
-scoreboard players set @a red8 0
-scoreboard players set @a redw 0
-
-scoreboard players enable @p[team=blue] blue1
-scoreboard players enable @p[team=blue] blue2
-scoreboard players enable @p[team=blue] blue3
-scoreboard players enable @p[team=blue] blue4
-scoreboard players enable @p[team=blue] blue5
-scoreboard players enable @p[team=blue] blue6
-scoreboard players enable @p[team=blue] blue7
-scoreboard players enable @p[team=blue] blue8
-scoreboard players enable @p[team=blue] bluew
-
-scoreboard players enable @p[team=red] red1
-scoreboard players enable @p[team=red] red2
-scoreboard players enable @p[team=red] red3
-scoreboard players enable @p[team=red] red4
-scoreboard players enable @p[team=red] red5
-scoreboard players enable @p[team=red] red6
-scoreboard players enable @p[team=red] red7
-scoreboard players enable @p[team=red] red8
-scoreboard players enable @p[team=red] redw
+scoreboard players enable @a[team=red] red_build
 #----------------------------------------------
 scoreboard players set @a ra1 0
 scoreboard players set @a ba1 0
@@ -101,43 +67,21 @@ scoreboard players set @a ba27 0
 scoreboard players set @a ra28 0
 scoreboard players set @a ba28 0
 
-scoreboard players set @a ra5lvl1 0
-scoreboard players set @a ra5lvl2 0
-scoreboard players set @a ra5lvl3 0
+scoreboard players set @a ra5lvl 0
+scoreboard players set @a ba5lvl 0
+scoreboard players set @a rb5lvl 0
+scoreboard players set @a bb5lvl 0
 
-scoreboard players set @a ba5lvl1 0
-scoreboard players set @a ba5lvl2 0
-scoreboard players set @a ba5lvl3 0
-
-scoreboard players set @a rb5lvl1 0
-scoreboard players set @a rb5lvl2 0
-scoreboard players set @a rb5lvl3 0
-
-scoreboard players set @a bb5lvl1 0
-scoreboard players set @a bb5lvl2 0
-scoreboard players set @a bb5lvl3 0
-
-scoreboard players set @a r3lvl1 0
-scoreboard players set @a r3lvl2 0
-
-scoreboard players set @a b3lvl1 0
-scoreboard players set @a b3lvl2 0
+scoreboard players set @a r3lvl 0
+scoreboard players set @a b3lvl 0
 
 scoreboard players set @a ra7lvl1 0
-
 scoreboard players set @a ba7lvl1 0
-
 scoreboard players set @a rb7lvl1 0
-
 scoreboard players set @a bb7lvl1 0
 
-scoreboard players set @a r8lvl1 0
-scoreboard players set @a r8lvl2 0
-scoreboard players set @a r8lvl3 0
-
-scoreboard players set @a b8lvl1 0
-scoreboard players set @a b8lvl2 0
-scoreboard players set @a b8lvl3 0
+scoreboard players set @a r8lvl 0
+scoreboard players set @a b8lvl 0
 
 scoreboard players set @a rws 0
 scoreboard players set @a rfs 0
@@ -160,6 +104,8 @@ scoreboard players set @a tool_range 0
 #種族
 scoreboard players set @a rspecial 0
 scoreboard players set @a bspecial 0
+scoreboard players enable @a rspecial
+scoreboard players enable @a bspecial
 
 scoreboard players set @a rcivpick 0
 scoreboard players set @a bcivpick 0

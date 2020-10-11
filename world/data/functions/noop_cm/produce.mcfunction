@@ -186,6 +186,8 @@ execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ e
 
 function battle:contral if @e[tag=cmd,score_speaking_min=1]
 
+#審查
+execute @e[tag=cmd,score_gm=0,score_challenging_min=1] ~ ~ ~ execute @p[m=!2] ~ ~ ~ scoreboard players set @e[tag=cmd] gm 1
 
 
 

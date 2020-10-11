@@ -2,6 +2,11 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
+#挑戰
+#0-1
+execute @e[tag=cmd,c=1,score_challenging_min=1] ~ ~ ~ scoreboard players operation §cTime scores = @e[tag=cmd] count_
+execute @e[tag=cmd,c=1,score_challenging_min=1] ~ ~ ~ execute @e[tag=blue1,c=1] ~ ~ ~ scoreboard players set @e[tag=cmd] kdect 4
+execute @e[tag=cmd,c=1,score_challenging_min=1] ~ ~ ~ execute @e[tag=blue1,c=1] ~ ~ ~ execute @e[tag=s,c=1,team=red,r=2] ~ ~ ~ scoreboard players set @e[tag=cmd] kdect 0
 #指揮中心偵測
 execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=0] ~ ~ ~ function other:battle_end/blue_win unless @e[tag=red1]
 execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=1,score_mode_min=0] ~ ~ ~ function other:battle_end/red_win unless @e[tag=blue1]
