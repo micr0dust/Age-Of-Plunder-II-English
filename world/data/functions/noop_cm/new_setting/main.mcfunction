@@ -111,9 +111,9 @@ function noop_cm:new_setting/aislect/a101 if @e[tag=cmd,score_AI_min=5,score_map
 #AI作弊設定
 function noop_cm:new_setting/aicheat if @e[tag=cmd,score_map_min=1,score_gamemode_min=1,score_mode=1,score_mode_min=0]
 function noop_cm:new_setting/aicheat if @e[tag=cmd,score_map_min=1,score_gamemode_min=1,score_mode=6,score_mode_min=3]
-#模式?
-#種族?
-#開始&重置
+#關於
+execute @e[tag=cmd,score_menu_min=4,score_menu=4] ~ ~ ~ tellraw @a ["",{"text":"--- About -----------------","color":"gold"},{"text":"\n\n"},{"text":"This map was made by Microdust. ","color":"green"},{"text":"\n\n"},{"text":"Minecraft version:","color":"gold"},{"text":" 1.12.2","color":"aqua"},{"text":"\n"},{"text":"Language:","color":"gold"},{"text":" English","color":"aqua"},{"text":"\n"},{"text":"Player:","color":"gold"},{"text":" suggest 1 or 2","color":"aqua"},{"text":"\n"},{"text":"Time:","color":"gold"},{"text":" About 20 mins","color":"aqua"},{"text":"\n"},{"text":"Game category:","color":"gold"},{"text":" Strategic","color":"aqua"},{"text":"\n"},{"text":"Mode:","color":"gold"},{"text":" Adventure mode","color":"aqua"},{"text":"\n"},{"text":"Difficulty:","color":"gold"},{"text":" Suggest simple or normal ","color":"aqua"},{"text":"\n"},{"text":"(the more difficult the more damage soldiers have)","color":"dark_aqua"},{"text":"\n"},{"text":"resources package:","color":"gold"},{"text":" ","color":"aqua","clickEvent":{"action":"open_url","value":"http://www.mediafire.com/file/lmdx62ghr5h4l3x/AgeOfPlunder_II_AOE_SoundEffect.zip/file"},"hoverEvent":{"action":"show_text","value":"download resources package"}},{"text":"here","underlined":true,"color":"aqua","clickEvent":{"action":"open_url","value":"http://www.mediafire.com/file/lmdx62ghr5h4l3x/AgeOfPlunder_II_AOE_SoundEffect.zip/file"},"hoverEvent":{"action":"show_text","value":"download resources package"}},{"text":"\n\n"},{"text":"If you found any bug, please tell me on my ","color":"green"},{"text":"Youtube channel","underlined":true,"color":"red","clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCALpNcNAGu-otVgBmwWDNzg"}},{"text":" or ","color":"green"},{"text":"Planet Minecraft","underlined":true,"color":"red","clickEvent":{"action":"open_url","value":"https://www.planetminecraft.com/project/age-of-predation-ii-gold-empire/"}},{"text":"\n\n"},{"text":"------------------------","color":"gold"},{"text":"\n "}]
+
 function noop_cm:new_setting/restart if @e[tag=cmd,score_map=0,score_menu_min=1]
 function noop_cm:new_setting/start if @e[tag=cmd,score_map_min=1]
 
@@ -130,7 +130,7 @@ scoreboard players enable @a civpick
 execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a {"text":"--- Game Menu ------------\n","color":"gold"}
 execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a ["",{"text":" ","color":"gold"},{"text":"[Teaching battle]","color":"yellow","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/menu/new"},"hoverEvent":{"action":"show_text","value":"Follow the instructions and quickly learn how to play"}}]
 execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a ["",{"text":" ","color":"gold"},{"text":"[Custom game]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/menu/custom"},"hoverEvent":{"action":"show_text","value":"Custom games with maps, terrain and opponents"}}]
-#execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a ["",{"text":" ","color":"gold"},{"text":"[Setting]","color":"white","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/menu/setting"},"hoverEvent":{"action":"show_text","value":"Sound, icon and other settings"}}]
+execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a ["",{"text":" ","color":"gold"},{"text":"[About]","color":"dark_aqua","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/menu/setting"},"hoverEvent":{"action":"show_text","value":"About the game or author"}}]
 
 
 execute @e[tag=cmd,score_menu=0] ~ ~ ~ tellraw @a ["",{"text":"\n------------------------","color":"gold"},{"text":" "}]

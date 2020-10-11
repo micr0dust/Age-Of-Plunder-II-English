@@ -353,7 +353,7 @@ scoreboard players set @a followv 0
 
 scoreboard objectives add menu dummy
 scoreboard players set @e[tag=cmd] menu 0
-#0選擇1教學2自訂遊戲3劇情4設定
+#0選擇1教學2自訂遊戲3劇情4關於
 
 scoreboard objectives add puuid dummy
 scoreboard players set @a puuid 1

@@ -72,27 +72,27 @@ execute @p[score_ra5=1,score_ra5_min=1] ~ ~ ~ function noop_cm:buy/a5/red if @e[
 execute @p[score_ba5=1,score_ba5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=8]
 execute @p[score_ba5=1,score_ba5_min=1] ~ ~ ~ function noop_cm:buy/a5/blue if @e[tag=cmd,score_bfood_min=8]
 #---重裝步兵
-execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=8,score_rgold_min=4]
-execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/b5/red if @e[tag=cmd,score_rfood_min=8,score_rgold_min=4]
-execute @p[score_bb5=1,score_bb5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=8,score_bgold_min=4]
-execute @p[score_bb5=1,score_bb5_min=1] ~ ~ ~ function noop_cm:buy/b5/blue if @e[tag=cmd,score_bfood_min=8,score_bgold_min=4]
+execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=8,score_rgold_min=2]
+execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/b5/red if @e[tag=cmd,score_rfood_min=8,score_rgold_min=2]
+execute @p[score_bb5=1,score_bb5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=8,score_bgold_min=2]
+execute @p[score_bb5=1,score_bb5_min=1] ~ ~ ~ function noop_cm:buy/b5/blue if @e[tag=cmd,score_bfood_min=8,score_bgold_min=2]
 #---升級
 #--步兵
 #-紅
-execute @p[score_ra5lvl1=1,score_ra5lvl1_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
-execute @p[score_ra5lvl1=1,score_ra5lvl1_min=1] ~ ~ ~ function noop_cm:upgrade/ra5lvl1 if @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
+execute @p[score_ra5lvl1=1,score_ra5lvl1_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=30,score_rgold_min=10]
+execute @p[score_ra5lvl1=1,score_ra5lvl1_min=1] ~ ~ ~ function noop_cm:upgrade/ra5lvl1 if @e[tag=cmd,score_rfood_min=30,score_rgold_min=10]
 execute @p[score_ra5lvl2=1,score_ra5lvl2_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
 execute @p[score_ra5lvl2=1,score_ra5lvl2_min=1] ~ ~ ~ function noop_cm:upgrade/ra5lvl2 if @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
-execute @p[score_ra5lvl3=1,score_ra5lvl3_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
-execute @p[score_ra5lvl3=1,score_ra5lvl3_min=1] ~ ~ ~ function noop_cm:upgrade/ra5lvl3 if @e[tag=cmd,score_rfood_min=40,score_rgold_min=15]
+execute @p[score_ra5lvl3=1,score_ra5lvl3_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=50,score_rgold_min=20]
+execute @p[score_ra5lvl3=1,score_ra5lvl3_min=1] ~ ~ ~ function noop_cm:upgrade/ra5lvl3 if @e[tag=cmd,score_rfood_min=50,score_rgold_min=20]
 
 #-藍
-execute @p[score_ba5lvl1=1,score_ba5lvl1_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
-execute @p[score_ba5lvl1=1,score_ba5lvl1_min=1] ~ ~ ~ function noop_cm:upgrade/ba5lvl1 if @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
+execute @p[score_ba5lvl1=1,score_ba5lvl1_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=30,score_bgold_min=10]
+execute @p[score_ba5lvl1=1,score_ba5lvl1_min=1] ~ ~ ~ function noop_cm:upgrade/ba5lvl1 if @e[tag=cmd,score_bfood_min=30,score_bgold_min=10]
 execute @p[score_ba5lvl2=1,score_ba5lvl2_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
 execute @p[score_ba5lvl2=1,score_ba5lvl2_min=1] ~ ~ ~ function noop_cm:upgrade/ba5lvl2 if @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
-execute @p[score_ba5lvl3=1,score_ba5lvl3_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
-execute @p[score_ba5lvl3=1,score_ba5lvl3_min=1] ~ ~ ~ function noop_cm:upgrade/ba5lvl3 if @e[tag=cmd,score_bfood_min=40,score_bgold_min=15]
+execute @p[score_ba5lvl3=1,score_ba5lvl3_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=50,score_bgold_min=20]
+execute @p[score_ba5lvl3=1,score_ba5lvl3_min=1] ~ ~ ~ function noop_cm:upgrade/ba5lvl3 if @e[tag=cmd,score_bfood_min=50,score_bgold_min=20]
 #--重裝步兵
 #-紅
 execute @p[score_rb5lvl1=1,score_rb5lvl1_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=30,score_rgold_min=20]
@@ -363,6 +363,9 @@ execute @e[tag=attack] ~ ~ ~ execute @e[tag=barr,c=1,score_path_min=600] ~ ~ ~ f
 
 execute @e[tag=attack] ~ ~ ~ kill @e[tag=blue3,r=3]
 execute @e[tag=attack] ~ ~ ~ execute @e[tag=target,r=3] ~ ~ ~ function ai:stop_attack
+
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ execute @e[tag=vill] ~ ~ ~ kill @e[tag=blue3,r=3]
+
 #攻擊路徑微調
 scoreboard players set @e[tag=s,team=blue] noai 0
 execute @e[tag=attack] ~ ~ ~ scoreboard players set @e[tag=s,r=3,team=blue] noai 1
@@ -403,6 +406,7 @@ scoreboard players operation §cscore scores = @e[tag=cmd] rp
 execute @e[tag=cmd,c=1,score_mode=2,score_mode_min=2,score_canend_min=1] ~ ~ ~ scoreboard players operation §6rounds scores = @e[tag=cmd] resc
 #垃圾清理
 scoreboard players set @e[type=Item] trash 1 {Item:{Count:1b,id:"minecraft:iron_horse_armor"}}
+scoreboard players set @e[type=Item] trash 1 {Item:{Count:1b,id:"minecraft:diamond_horse_armor"}}
 scoreboard players set @e[type=Item] trash 1 {Item:{Count:1b,id:"minecraft:glass_bottle"}}
 scoreboard players set @e[type=Item] trash 1 {Item:{Count:1b,id:"minecraft:saddle"}}
 scoreboard players set @e[type=Item] trash 1 {Item:{Count:1b,id:"minecraft:carpet"}}

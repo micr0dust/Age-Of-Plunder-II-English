@@ -1,6 +1,6 @@
 
 
-This map is made by "Wuilliam_Dust" (Yes, only one person)
+This map is made by "Microdust" (Yes, only one person)
 
 Please play with minecraft v1.12.2
 
@@ -8,11 +8,11 @@ If the map have any mistakes or other suggestions, please tell me!
 
 
 Enter this command to reset the map:
-/ Function settings: restart
+/function settings: restart
 
 If no one is in the blue team, the blue team will be replaced by AI
 
-Version v2.0b
+Version v2.1a
 
 ---------------------------------
 If the AI cannot be used, please refer to the following reasons.
