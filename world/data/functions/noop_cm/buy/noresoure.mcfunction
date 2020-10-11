@@ -1,3 +1,7 @@
-tellraw @p {"text":"Not enough resources","bold":true,"color":"dark_red"}
+#########################################################################################################
+#【掠奪時代II:黃金帝國 】
+# 作者: 灰塵
+#########################################################################################################
+tellraw @p {"translate":"aop.noresoure","bold":true,"color":"dark_red"}
 playsound minecraft:item.shield.break block @p
 function noop_cm:cmend

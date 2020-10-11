@@ -25,7 +25,7 @@ execute @e[tag=red2,c=1] ~ ~ ~ execute @e[tag=cmd,score_rciv=6,score_rciv_min=6]
 playsound minecraft:block.note.pling record @p[team=red] ~ ~ ~ 1 0.749
 function noop_cm:chat_clearall
 function noop_cm:chat_clearall
-tellraw @p[team=red] ["",{"text":"---Fortress-------------------","color":"gold"},{"text":"\n"},{"text":"produce:","color":"dark_green"}]
+tellraw @p[team=red] ["",{"translate":"aop.fortress","color":"gold"},{"text":"\n"},{"translate":"aop.produce","color":"dark_green"}]
 execute @p[team=red] ~ ~ ~ function noop_cm:buy/rbuy if @e[tag=cmd,score_rciv=0]
 execute @p[team=red] ~ ~ ~ function noop_cm:special/a1 if @e[tag=cmd,score_rciv=1,score_rciv_min=1]
 execute @p[team=red] ~ ~ ~ function noop_cm:special/a2 if @e[tag=cmd,score_rciv=2,score_rciv_min=2]
@@ -33,7 +33,6 @@ execute @p[team=red] ~ ~ ~ function noop_cm:special/a3 if @e[tag=cmd,score_rciv=
 execute @p[team=red] ~ ~ ~ function noop_cm:special/a4 if @e[tag=cmd,score_rciv=4,score_rciv_min=4]
 execute @p[team=red] ~ ~ ~ function noop_cm:special/a5 if @e[tag=cmd,score_rciv=5,score_rciv_min=5]
 execute @p[team=red] ~ ~ ~ function noop_cm:special/a6 if @e[tag=cmd,score_rciv=6,score_rciv_min=6]
-tellraw @p[team=red] ["",{"text":"Upgrade:","color":"dark_green"},{"text":"\n"},{"text":"[Spy] ","color":"yellow"},{"text":"This feature has not been updated","color":"gold"}]
 
 
 function noop_cm:cmend

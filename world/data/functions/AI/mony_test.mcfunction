@@ -39,10 +39,11 @@ execute @e[tag=cmd,c=1,score_AI_attack=0] ~ ~ ~ execute @e[tag=cmd,score_gamemod
 execute @e[tag=cmd,c=1,score_AI_attack=0] ~ ~ ~ execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1,score_bs_min=5,score_keepattack_min=1] ~ ~ ~ scoreboard players set @e[tag=cmd] attack 1
 execute @e[tag=cmd,c=1,score_AI_attack=0] ~ ~ ~ execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1,score_bs_min=5,score_attack=0] ~ ~ ~ /execute @e[tag=blue1,c=1] ~ ~ ~ function ai:attack
 #主動投降
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ scoreboard players operation @e[tag=cmd] AItest = @e[tag=cmd] rp
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ scoreboard players operation @e[tag=cmd] AItest -= @e[tag=cmd] bp
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ scoreboard players operation @e[tag=cmd] AItest = @e[tag=cmd] rp
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ scoreboard players operation @e[tag=cmd] AItest -= @e[tag=cmd] bp
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ execute @e[tag=cmd,c=1,score_AItest_min=300] ~ ~ ~ kill @e[tag=blue1]
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ scoreboard players set @e[tag=cmd] AItest 0
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_attack=0] ~ ~ ~ execute @e[tag=cmd,c=1,score_AItest=-300] ~ ~ ~ execute @e[tag=attack] ~ ~ ~ function ai:attack_feedback/wall if @e[tag=blue4,r=2]
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ scoreboard players set @e[tag=cmd] AItest 0
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ execute @e[tag=vill,team=blue] ~ ~ ~ scoreboard players add @e[tag=cmd] AItest 1
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~ ~ ~ execute @e[tag=cmd,c=1,score_AItest=0,score_bv_min=2] ~ ~ ~ kill @e[tag=blue1]
 
@@ -50,4 +51,7 @@ execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI_surrender=0] ~
 function noop_cm:loop
 
 effect @a 18 2 255 true
-effect @a[r=23] 11 2 255 true
+effect @a minecraft:saturation 10 10 true
+setworldspawn 67 53 -214
+gamemode 2 @a[m=0]
+execute @e[tag=cmd,score_canend=0] ~ ~ ~ effect @a 10 2 255 true

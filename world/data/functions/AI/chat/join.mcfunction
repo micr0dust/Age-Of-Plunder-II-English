@@ -1,134 +1,134 @@
+#########################################################################################################
+#【掠奪時代II:黃金帝國 】
+# 作者: 灰塵
+#########################################################################################################
 
 
 #founder_AI  (AI=1 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"founder_AI join the game","color":"yellow"}
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a ["",{"text":"<"},{"text":"founder_AI","color":"blue"},{"text":"> good luck !\n<"},{"text":"founder_AI","color":"blue"},{"text":"> hope you can beat me."}]
-
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"founder_AI ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #depend_North_engineer  (AI=1 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"depend_North_engineer join the game","color":"yellow"}
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a ["",{"text":"<"},{"text":"depend_North_engineer","color":"blue"},{"text":"> I don't want to hurt you, my friend.\n<"},{"text":"depend_North_engineer","color":"blue"},{"text":"> But you are on my land !"}]
-
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"depend_North_engineer ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #jerry87  (AI=1 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"jerry87 join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"jerry87 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #bunker2019  (AI=1 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"bunker2019 join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"bunker2019 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #lighthouse_keeper  (AI=1 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"lighthouse_keeper join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"lighthouse_keeper ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #stone_barbarian  (AI=1 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"stone_barbarian join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"stone_barbarian ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #primitive  (AI=2 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"primitive join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"primitive ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #prairie_nation  (AI=2 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"prairie_nation join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"prairie_nation ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #nomadsOAQ  (AI=2 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"nomadsOAQ join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"nomadsOAQ ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #Castlerine_Catherine  (AI=2 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"Castlerine_Catherine join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Castlerine_Catherine ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #Basil  (AI=2 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"Basil join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Basil ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #barbarous_fairy  (AI=2 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"barbarous_fairy join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=2,score_AI_min=2,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"barbarous_fairy ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #standard  (AI=3 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"standard join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"standard ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #Greentooth  (AI=3 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"Greentooth join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Greentooth ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #wELL_pLAY  (AI=3 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"wELL_pLAY join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"wELL_pLAY ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #mMmrepairer  (AI=3 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"mMmrepairer join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"mMmrepairer ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #egg_tower79  (AI=3 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"egg_tower79 join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"egg_tower79 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #stone_tiger592  (AI=3 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"stone_tiger592 join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=3,score_AI_min=3,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"stone_tiger592 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #Kǔ_gàn_shígàn  (AI=4 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"Kǔ_gàn_shígàn join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Kǔ_gàn_shígàn ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #advancer1984  (AI=4 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"advancer1984 join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"advancer1984 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #auto_evelop  (AI=4 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"auto_evelop join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"auto_evelop ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #celebraker  (AI=4 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"celebraker join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"celebraker ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #vamperor  (AI=4 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"vamperor join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"vamperor ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 #inzane_johnny  (AI=4 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"inzane_johnny join the game","color":"yellow"}
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=4,score_AI_min=4,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"inzane_johnny ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Tilapia  (AI=4 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"Tilapia join the game","color":"yellow"}
+#Tilapia  (AI=5 ; aibuild=1)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Tilapia ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Orange_Chen  (AI=4 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"advancer1984 join the game","color":"yellow"}
+#Orange_Chen  (AI=5 ; aibuild=2)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"advancer1984 ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#oyster_P  (AI=4 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"Orange_Chen join the game","color":"yellow"}
+#oyster_P  (AI=5 ; aibuild=3)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Orange_Chen ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#English_Cai  (AI=4 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"English_Cai join the game","color":"yellow"}
+#English_Cai  (AI=5 ; aibuild=4)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"English_Cai ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Jelly  (AI=4 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"Jelly join the game","color":"yellow"}
+#Jelly  (AI=5 ; aibuild=5)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Jelly ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Korea_Fish  (AI=4 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"Korea_Fish join the game","color":"yellow"}
+#Korea_Fish  (AI=5 ; aibuild=6)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=5,score_AI_min=5,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Korea_Fish ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Author  (AI=4 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"Author join the game","color":"yellow"}
+#Author  (AI=6 ; aibuild=1)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Author ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Doctrinam_Sandwico  (AI=4 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"Doctrinam_Sandwico join the game","color":"yellow"}
+#Doctrinam_Sandwico  (AI=6 ; aibuild=2)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Doctrinam_Sandwico ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Eight_Ha  (AI=4 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"Eight_Ha join the game","color":"yellow"}
+#Eight_Ha  (AI=6 ; aibuild=3)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Eight_Ha ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Yah_tiger  (AI=4 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"Yah_tiger join the game","color":"yellow"}
+#Yah_tiger  (AI=6 ; aibuild=4)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Yah_tiger ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Bone_Dog  (AI=4 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"Bone_Dog join the game","color":"yellow"}
+#Bone_Dog  (AI=6 ; aibuild=5)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Bone_Dog ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Oil_Tube  (AI=4 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"Oil_Tube join the game","color":"yellow"}
+#Oil_Tube  (AI=6 ; aibuild=6)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=6,score_AI_min=6,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Oil_Tube ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Json  (AI=4 ; aibuild=1)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a {"text":"Json join the game","color":"yellow"}
+#Json  (AI=7 ; aibuild=1)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=1,score_aibuild_min=1] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Json ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Mcfunction  (AI=4 ; aibuild=2)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a {"text":"Mcfunction join the game","color":"yellow"}
+#Mcfunction  (AI=7 ; aibuild=2)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=2,score_aibuild_min=2] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Mcfunction ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Python  (AI=4 ; aibuild=3)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a {"text":"Python join the game","color":"yellow"}
+#Python  (AI=7 ; aibuild=3)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=3,score_aibuild_min=3] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Python ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Jquery  (AI=4 ; aibuild=4)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a {"text":"Jquery join the game","color":"yellow"}
+#Jquery  (AI=7 ; aibuild=4)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=4,score_aibuild_min=4] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Jquery ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Cascading_Style_Sheets  (AI=4 ; aibuild=5)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a {"text":"Cascading_Style_Sheets join the game","color":"yellow"}
+#Cascading_Style_Sheets  (AI=7 ; aibuild=5)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=5,score_aibuild_min=5] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Cascading_Style_Sheets ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
-#Javascript  (AI=4 ; aibuild=6)
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a {"text":"Javascript join the game","color":"yellow"}
+#Javascript  (AI=7 ; aibuild=6)
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=7,score_AI_min=7,score_aibuild=6,score_aibuild_min=6] ~ ~ ~ /tellraw @a[team=!sp] [{"text":"Javascript ","color":"yellow"},{"translate":"aop.ai.join","color":"yellow"}]
 
 
 

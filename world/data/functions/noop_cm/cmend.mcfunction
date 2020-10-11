@@ -59,6 +59,8 @@ scoreboard players set @a ra8 0
 scoreboard players set @a ba8 0
 scoreboard players set @a rb8 0
 scoreboard players set @a bb8 0
+scoreboard players set @a rspecial5 0
+scoreboard players set @a bspecial5 0
 
 scoreboard players set @a ra25 0
 scoreboard players set @a ba25 0
@@ -92,6 +94,11 @@ scoreboard players set @a bws 0
 scoreboard players set @a bfs 0
 scoreboard players set @a bwb 0
 scoreboard players set @a bfb 0
+
+scoreboard players set @a r6 0
+scoreboard players set @a b6 0
+scoreboard players enable @a r6
+scoreboard players enable @a b6
 #更新介面-------------------------
 scoreboard players set @a join_red 0
 scoreboard players set @a join_blue 0

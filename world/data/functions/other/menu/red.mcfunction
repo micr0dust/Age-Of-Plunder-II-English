@@ -2,6 +2,9 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
+function noop_cm:chat_clearall
+give @p[team=red] minecraft:paper 1 0 {display:{Name:"§cMenu",Lore:["game options"]},redm:1b,ench:[{id:71,lvl:3}]}
+
 scoreboard players enable @p redstop
 scoreboard players enable @p redkeep
 scoreboard players enable @p redsurrender
@@ -20,6 +23,6 @@ execute @e[tag=cmd,score_menu_min=1,score_menu=1] ~ ~ ~ tellraw @p[score_AItest_
 tellraw @p[team=red,score_AItest_min=1] ["",{"text":"------------------------","color":"gold"},{"text":" "}]
 scoreboard players set @p AItest 0
 
-
+kill @e[tag=redm]
 
 

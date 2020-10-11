@@ -2,7 +2,7 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
-tellraw @p {"text":"[Random]","color":"gold","clickEvent":{"action":"run_command","value":"/function noop_cm:ramdom"}}
+tellraw @p {"translate":"aop.main.random.select","color":"gold","clickEvent":{"action":"run_command","value":"/function noop_cm:ramdom"}}
 
 
 

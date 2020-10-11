@@ -5,7 +5,7 @@
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 function noop_cm:chat_clearall
 function noop_cm:chat_clearall
-tellraw @a {"text":"Random selection . . .","color":"gold"}
+tellraw @a {"translate":"aop.ai.random","color":"gold"}
 
 execute @e[tag=cmd,score_ramdon2=1,score_ramdon2_min=1] ~ ~ ~ scoreboard players set @e[tag=cmd] AI 1
 execute @e[tag=cmd,score_ramdon2=2,score_ramdon2_min=2] ~ ~ ~ scoreboard players set @e[tag=cmd] AI 2

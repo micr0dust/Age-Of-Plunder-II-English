@@ -2,4 +2,4 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
-tellraw @p {"text":"[central mountain range]","color":"yellow","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/map/a2"}}
+tellraw @p {"translate":"aop.terrain.names2","color":"yellow","clickEvent":{"action":"run_command","value":"/function noop_cm:new_setting/map/a2"}}

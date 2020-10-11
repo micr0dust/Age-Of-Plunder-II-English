@@ -2,7 +2,7 @@
 #【掠奪時代II:黃金帝國 】
 # 作者: 灰塵
 #########################################################################################################
-tellraw @a {"text":"\n[game menu]","color":"gray","clickEvent":{"action":"run_command","value":"/function setting:restart"}}
+tellraw @a ["",{"text":"\n"},{"translate":"aop.setting.resetmap2","color":"gray","clickEvent":{"action":"run_command","value":"/function setting:restart"}}]
 
 
 

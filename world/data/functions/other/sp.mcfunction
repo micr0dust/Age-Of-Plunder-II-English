@@ -6,4 +6,4 @@ scoreboard teams add sp spectator
 scoreboard teams option sp color gray
 scoreboard teams option sp friendlyfire false
 scoreboard teams join sp @p
-tellraw @p {"text":"You are now a spectator !"}
+tellraw @p {"translate":"aop.setting.team.spjoin"}

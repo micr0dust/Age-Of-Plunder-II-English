@@ -8,6 +8,10 @@ execute @p[score_ra5=1,score_ra5_min=1] ~ ~ ~ function noop_cm:buy/a5/red if @e[
 #---重裝步兵
 execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=8,score_rgold_min=2]
 execute @p[score_rb5=1,score_rb5_min=1] ~ ~ ~ function noop_cm:buy/b5/red if @e[tag=cmd,score_rfood_min=8,score_rgold_min=2]
+#歌德
+execute @p[score_rspecial5=2,score_rspecial5_min=2] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=10,score_rgold_min=5]
+execute @p[score_rspecial5=2,score_rspecial5_min=2] ~ ~ ~ function noop_cm:buy/sp5/red if @e[tag=cmd,score_rfood_min=10,score_rgold_min=5]
+
 #---升級
 #--步兵
 #-紅

@@ -23,17 +23,22 @@ execute @e[tag=attack] ~ ~ ~ execute @e[tag=barr,c=1,r=11,score_path_min=500] ~ 
 execute @e[tag=attack] ~ ~ ~ execute @e[tag=barr,c=1,r=12,score_path_min=600] ~ ~ ~ scoreboard players add @e[tag=barr,c=1,r=13] path 1
 execute @e[tag=attack] ~ ~ ~ execute @e[tag=barr,c=1,score_path_min=600] ~ ~ ~ function ai:stop_attack
 
-execute @e[tag=attack] ~ ~ ~ kill @e[tag=blue3,r=3]
+execute @e[tag=attack] ~ ~ ~ function ai:attack_feedback/tower if @e[tag=blue3,r=3]
+execute @e[tag=attack] ~ ~ ~ function ai:attack_feedback/farm if @e[tag=blue6,r=2]
 execute @e[tag=attack] ~ ~ ~ execute @e[tag=target,r=3] ~ ~ ~ function ai:stop_attack
 
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ execute @e[tag=vill] ~ ~ ~ kill @e[tag=blue3,r=3]
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1] ~ ~ ~ execute @e[tag=vill] ~ ~ ~ function ai:attack_feedback/tower if @e[tag=blue3,r=2]
 
 #攻擊路徑微調
 scoreboard players set @e[tag=s,team=blue] noai 0
+scoreboard players set @e[tag=vill,team=blue] noai 0
 execute @e[tag=attack] ~ ~ ~ scoreboard players set @e[tag=s,r=3,team=blue] noai 1
-execute @e[tag=attack] ~ ~ ~ execute @e[tag=s,r=2,team=blue] ~ ~ ~ tp @e[c=1] ~-0.1 ~ ~0.1
+execute @e[tag=attack] ~ ~ ~ scoreboard players set @e[tag=vill,r=3,team=blue] noai 1
+#execute @e[tag=attack] ~ ~ ~ execute @e[tag=s,r=2,team=blue] ~ ~ ~ tp @e[c=1] ~-0.1 ~ ~0.1
 execute @e[tag=cmd,score_stop=0,score_stop_min=0] ~ ~ ~ entitydata @e[tag=s,team=blue,score_noai_min=1] {NoAI:1}
 execute @e[tag=cmd,score_stop=0,score_stop_min=0] ~ ~ ~ entitydata @e[tag=s,team=blue,score_noai=0] {NoAI:0}
+execute @e[tag=cmd,score_stop=0,score_stop_min=0] ~ ~ ~ entitydata @e[tag=vill,team=blue,score_noai_min=1] {NoAI:1}
+execute @e[tag=cmd,score_stop=0,score_stop_min=0] ~ ~ ~ entitydata @e[tag=vill,team=blue,score_noai=0] {NoAI:0}
 
 execute @e[tag=mameluke,team=red] ~ ~ ~ function noop_cm:mstop if @e[tag=s,team=blue,r=7]
 execute @e[tag=mameluke,team=blue] ~ ~ ~ function noop_cm:mstop if @e[tag=s,team=red,r=7]

@@ -22,6 +22,8 @@ scoreboard players enable @a[team=red] ra27
 scoreboard players enable @a[team=blue] ba27
 scoreboard players enable @a[team=red] ra28
 scoreboard players enable @a[team=blue] ba28
+scoreboard players enable @a[team=red] rspecial5
+scoreboard players enable @a[team=blue] bspecial5
 
 
 

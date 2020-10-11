@@ -3,8 +3,8 @@
 # 作者: 灰塵
 #########################################################################################################
 #---弓兵
-execute @p[score_ra8=1,score_ra8_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=8,score_rwood_min=4]
-execute @p[score_ra8=1,score_ra8_min=1] ~ ~ ~ function noop_cm:buy/a8/red if @e[tag=cmd,score_rfood_min=8,score_rwood_min=4]
+execute @p[score_ra8=1,score_ra8_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rfood_min=4,score_rwood_min=4]
+execute @p[score_ra8=1,score_ra8_min=1] ~ ~ ~ function noop_cm:buy/a8/red if @e[tag=cmd,score_rfood_min=4,score_rwood_min=4]
 #---馬弓騎兵
 execute @p[score_rb8=1,score_rb8_min=1] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_rwood_min=8,score_rgold_min=2]
 execute @p[score_rb8=1,score_rb8_min=1] ~ ~ ~ function noop_cm:buy/b8/red if @e[tag=cmd,score_rwood_min=8,score_rgold_min=2]

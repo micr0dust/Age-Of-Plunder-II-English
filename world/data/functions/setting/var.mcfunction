@@ -21,8 +21,9 @@ gamerule showDeathMessages false
 gamerule naturalRegeneration false
 gamerule spectatorsGenerateChunks false
 setworldspawn 7 4 27
+kill @e[tag=map]
 kill @e[tag=cmd]
-summon armor_stand 44 20 -153 {PersistenceRequired:1,Tags:["cmd"],Invulnerable:1}
+summon armor_stand 65 24 -202 {PersistenceRequired:1,Tags:["cmd"],Invulnerable:1}
 scoreboard objectives add money dummy
 scoreboard players set @e[tag=cmd] money 0
 
@@ -33,6 +34,23 @@ scoreboard players set @e[tag=cmd] terrain 0
 
 
 scoreboard objectives remove scores
+
+#自訂義地圖顏色
+scoreboard teams add flat
+scoreboard teams add grove
+scoreboard teams add forest
+scoreboard teams add gold
+scoreboard teams add mountain
+scoreboard teams add blue_team
+scoreboard teams add red_team
+
+scoreboard teams option flat color green
+scoreboard teams option grove color dark_red
+scoreboard teams option forest color dark_green
+scoreboard teams option gold color gold
+scoreboard teams option mountain color gray
+scoreboard teams option blue_team color aqua
+scoreboard teams option red_team color red
 
 #起始資源
 scoreboard objectives add org_food dummy
@@ -57,7 +75,7 @@ scoreboard objectives add rfood dummy
 scoreboard objectives add rgold dummy
 scoreboard objectives add rwood dummy
 #----------------------------------------------------
-scoreboard teams add attget 目標
+scoreboard teams add attget Target
 #-----------------------------------------------------
 scoreboard teams add team
 scoreboard teams option team friendlyfire false
@@ -102,6 +120,8 @@ scoreboard objectives add ra5 trigger
 scoreboard objectives add ba5 trigger
 scoreboard objectives add rb5 trigger
 scoreboard objectives add bb5 trigger
+scoreboard objectives add rspecial5 trigger
+scoreboard objectives add bspecial5 trigger
 
 scoreboard objectives add raslvl dummy
 scoreboard players set @e[tag=cmd] raslvl 1
@@ -158,6 +178,103 @@ scoreboard players set @e[tag=cmd] brlvl 1
 
 scoreboard objectives add r8lvl trigger
 scoreboard objectives add b8lvl trigger
+
+#田------------------------------------
+scoreboard objectives add b6 trigger
+scoreboard objectives add r6 trigger
+#建築鎖定
+scoreboard objectives add ar1 dummy
+scoreboard players set @e[tag=cmd] ar1 1
+scoreboard objectives add ar2 dummy
+scoreboard players set @e[tag=cmd] ar2 1
+scoreboard objectives add ar3 dummy
+scoreboard players set @e[tag=cmd] ar3 1
+scoreboard objectives add ar4 dummy
+scoreboard players set @e[tag=cmd] ar4 1
+scoreboard objectives add ar5 dummy
+scoreboard players set @e[tag=cmd] ar5 1
+scoreboard objectives add ar6 dummy
+scoreboard players set @e[tag=cmd] ar6 1
+scoreboard objectives add ar7 dummy
+scoreboard players set @e[tag=cmd] ar7 1
+scoreboard objectives add ar8 dummy
+scoreboard players set @e[tag=cmd] ar8 1
+scoreboard objectives add ar9 dummy
+scoreboard players set @e[tag=cmd] ar9 1
+
+scoreboard objectives add ab1 dummy
+scoreboard players set @e[tag=cmd] ab1 1
+scoreboard objectives add ab2 dummy
+scoreboard players set @e[tag=cmd] ab2 1
+scoreboard objectives add ab3 dummy
+scoreboard players set @e[tag=cmd] ab3 1
+scoreboard objectives add ab4 dummy
+scoreboard players set @e[tag=cmd] ab4 1
+scoreboard objectives add ab5 dummy
+scoreboard players set @e[tag=cmd] ab5 1
+scoreboard objectives add ab6 dummy
+scoreboard players set @e[tag=cmd] ab6 1
+scoreboard objectives add ab7 dummy
+scoreboard players set @e[tag=cmd] ab7 1
+scoreboard objectives add ab8 dummy
+scoreboard players set @e[tag=cmd] ab8 1
+scoreboard objectives add ab9 dummy
+scoreboard players set @e[tag=cmd] ab9 1
+#兵種鎖定
+scoreboard objectives add a5r dummy
+scoreboard players set @e[tag=cmd] a5r 1
+scoreboard objectives add a5b dummy
+scoreboard players set @e[tag=cmd] a5b 1
+scoreboard objectives add b5r dummy
+scoreboard players set @e[tag=cmd] b5r 1
+scoreboard objectives add b5b dummy
+scoreboard players set @e[tag=cmd] b5b 1
+
+scoreboard objectives add a7r dummy
+scoreboard players set @e[tag=cmd] a7r 1
+scoreboard objectives add a7b dummy
+scoreboard players set @e[tag=cmd] a7b 1
+scoreboard objectives add b7r dummy
+scoreboard players set @e[tag=cmd] b7r 1
+scoreboard objectives add b7b dummy
+scoreboard players set @e[tag=cmd] b7b 1
+
+scoreboard objectives add a8r dummy
+scoreboard players set @e[tag=cmd] a8r 1
+scoreboard objectives add a8b dummy
+scoreboard players set @e[tag=cmd] a8b 1
+scoreboard objectives add b8r dummy
+scoreboard players set @e[tag=cmd] b8r 1
+scoreboard objectives add b8b dummy
+scoreboard players set @e[tag=cmd] b8b 1
+#科技鎖定
+scoreboard objectives add lva5r dummy
+scoreboard players set @e[tag=cmd] lva5r 4
+scoreboard objectives add lva5b dummy
+scoreboard players set @e[tag=cmd] lva5b 4
+scoreboard objectives add lvb5r dummy
+scoreboard players set @e[tag=cmd] lvb5r 4
+scoreboard objectives add lvb5b dummy
+scoreboard players set @e[tag=cmd] lvb5b 4
+
+scoreboard objectives add lva7r dummy
+scoreboard players set @e[tag=cmd] lva7r 2
+scoreboard objectives add lva7b dummy
+scoreboard players set @e[tag=cmd] lva7b 2
+scoreboard objectives add lvb7r dummy
+scoreboard players set @e[tag=cmd] lvb7r 2
+scoreboard objectives add lvb7b dummy
+scoreboard players set @e[tag=cmd] lvb7b 2
+
+scoreboard objectives add lv8r dummy
+scoreboard players set @e[tag=cmd] lv8r 4
+scoreboard objectives add lv8b dummy
+scoreboard players set @e[tag=cmd] lv8b 4
+
+scoreboard objectives add lv3r dummy
+scoreboard players set @e[tag=cmd] lv3r 3
+scoreboard objectives add lv3b dummy
+scoreboard players set @e[tag=cmd] lv3b 3
 
 #市集--------------------------------------
 scoreboard objectives add rws trigger
@@ -291,6 +408,17 @@ scoreboard objectives add ctrl dummy
 scoreboard objectives add octrl dummy
 #村民控制型態
 
+scoreboard objectives add farm dummy
+#農田控制
+
+scoreboard objectives add rkeepfarm dummy
+scoreboard players set @e[tag=cmd] rkeepfarm 0
+#農田控制
+
+scoreboard objectives add bkeepfarm dummy
+scoreboard players set @e[tag=cmd] bkeepfarm 0
+#農田控制
+
 scoreboard objectives add trash dummy
 #垃圾
 
@@ -398,7 +526,7 @@ scoreboard players set @e[tag=cmd] tech 0
 scoreboard objectives add begin_res dummy
 scoreboard players set @e[tag=cmd] begin_res 1
 
-#--模式:0一般、1死鬥、2防守計時、3分數競賽、4戰霧、5*弒君、6世界奇觀?、7劇情
+#--模式:0一般、1死鬥、2防守計時、3分數競賽、4戰霧、5*弒君、6世界奇觀?、7劇情、8科技樹狀圖
 #(*表示不能跟AI玩)
 scoreboard objectives add mode dummy
 scoreboard players set @e[tag=cmd] mode 0
@@ -450,6 +578,15 @@ scoreboard players set @e[tag=cmd] count_ 0
 #--開計
 scoreboard objectives add can_count dummy
 scoreboard players set @e[tag=cmd] can_count 0
+#--樹狀圖選擇
+scoreboard objectives add tree_civ dummy
+scoreboard players set @e[tag=cmd] tree_civ 1024
+#--timer
+scoreboard objectives add timer dummy
+scoreboard players set @e[tag=cmd] timer 0
+#--select_type
+scoreboard objectives add select_type dummy
+scoreboard players set @e[tag=cmd] select_type 0
 
 function noop_cm:stop_music
 

@@ -4,6 +4,7 @@
 #########################################################################################################
 scoreboard players set @e[tag=cmd] map_style 1
 clone 13 43 -165 5 48 -173 7 43 -118 replace force
+clone 17 42 -151 25 42 -143 17 42 -96 replace force
 playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
 
 

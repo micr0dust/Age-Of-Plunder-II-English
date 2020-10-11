@@ -27,8 +27,12 @@ execute @e[tag=red5,r=5] ~ ~ ~ /clone -47 43 -100 -41 50 -106 ~-3 ~ ~-3 replace 
 
 execute @e[tag=blue6,r=5] ~ ~ ~ /clone -10 43 -130 -18 50 -122 ~-4 ~ ~-4 replace force
 execute @e[tag=red6,r=5] ~ ~ ~ /clone -20 43 -130 -28 50 -122 ~-4 ~ ~-4 replace force
-execute @e[tag=red6,r=5] ~ ~ ~ /summon minecraft:villager ~ ~1 ~ {Profession:5,Tags:["rom"],NoAI:1b,PersistenceRequired:1,CanPickUpLoot:0b,Silent:1,Invulnerable:1,Age:-6000,ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}]}
-execute @e[tag=blue6,r=5] ~ ~ ~ /summon minecraft:villager ~ ~1 ~ {Profession:5,Tags:["rom"],NoAI:1b,PersistenceRequired:1,CanPickUpLoot:0b,Silent:1,Invulnerable:1,Age:-6000,ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}]}
+execute @e[tag=red6,r=5] ~ ~ ~ /summon minecraft:villager ~ ~1 ~ {Profession:5,Tags:["rom","rfarm"],NoAI:1b,PersistenceRequired:1,CanPickUpLoot:0b,Silent:1,Invulnerable:1,Age:-6000,ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}]}
+execute @e[tag=blue6,r=5] ~ ~ ~ /summon minecraft:villager ~ ~1 ~ {Profession:5,Tags:["rom","bfarm"],NoAI:1b,PersistenceRequired:1,CanPickUpLoot:0b,Silent:1,Invulnerable:1,Age:-6000,ActiveEffects:[{Id:14,Amplifier:0,Duration:2147483647,ShowParticles:0b}]}
+execute @e[tag=blue6,r=5] ~ ~ ~ scoreboard players set @e[tag=bfarm,r=5,c=1] farm 0
+execute @e[tag=red6,r=5] ~ ~ ~ scoreboard players set @e[tag=rfarm,r=5,c=1] farm 0
+execute @e[tag=blue6,r=5,score_farm_min=1] ~ ~ ~ scoreboard players operation @e[tag=bfarm,r=5,c=1] farm = @e[tag=blue6,r=5,c=1] farm
+execute @e[tag=red6,r=5,score_farm_min=1] ~ ~ ~ scoreboard players operation @e[tag=rfarm,r=5,c=1] farm = @e[tag=red6,r=5,c=1] farm
 
 execute @e[tag=blue7,r=5] ~ ~ ~ /clone -21 43 -95 -27 50 -89 ~-3 ~ ~-3 replace force
 execute @e[tag=red7,r=5] ~ ~ ~ /clone -21 43 -100 -27 50 -106 ~-3 ~ ~-3 replace force
@@ -39,3 +43,4 @@ execute @e[tag=red8,r=5] ~ ~ ~ /clone -22 43 -109 -28 50 -115 ~-3 ~ ~-3 replace 
 execute @e[tag=bluew,r=5] ~ ~ ~ /clone -18 43 -152 -10 68 -144 ~-4 ~ ~-4 replace force
 execute @e[tag=redw,r=5] ~ ~ ~ /clone -18 43 -152 -10 68 -144 ~-4 ~ ~-4 replace force
 
+scoreboard players set @e[tag=tester,r=1,c=1] AItest 2

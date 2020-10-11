@@ -1,0 +1,71 @@
+#########################################################################################################
+#【掠奪時代II:黃金帝國 】
+# 作者: 灰塵
+#########################################################################################################
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0
+playsound custom.mute ambient @p ~ ~ ~ 5 0 0

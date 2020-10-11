@@ -28,8 +28,8 @@ execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=5,score_mode_min=5] ~ ~ ~ f
 execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=5,score_mode_min=5] ~ ~ ~ function other:battle_end/red_win if @p[team=blue,score_die_min=1]
 
 #奇觀倒數檢測
-execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ execute @e[tag=bluew,c=1] ~ ~ ~ scoreboard players operation §9CountDown scores = @e[tag=cmd] bwonder_count
-execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ execute @e[tag=redw,c=1] ~ ~ ~ scoreboard players operation §cCountDown scores = @e[tag=cmd] rwonder_count
+execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ execute @e[tag=bluew,c=1] ~ ~ ~ scoreboard players operation §9Countdown scores = @e[tag=cmd] bwonder_count
+execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ execute @e[tag=redw,c=1] ~ ~ ~ scoreboard players operation §cCountdown scores = @e[tag=cmd] rwonder_count
 execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ function other:battle_end/blue_win if @e[tag=cmd,c=1,score_bwonder_count=0]
 execute @e[tag=cmd,c=1,score_canend_min=1,score_mode=6,score_mode_min=6] ~ ~ ~ function other:battle_end/red_win if @e[tag=cmd,c=1,score_rwonder_count=0]
 scoreboard players set @a death 0
