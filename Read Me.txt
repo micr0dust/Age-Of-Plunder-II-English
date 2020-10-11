@@ -1,0 +1,26 @@
+
+
+This map is made by "Wuilliam_Dust" (Yes, only one person)
+
+Please play with minecraft v1.12.2
+
+If the map have any mistakes or other suggestions, please tell me!
+
+
+Enter this command to reset the map:
+/ Function settings: restart
+
+If no one is in the blue team, the blue team will be replaced by AI
+
+Version v2.0b
+
+---------------------------------
+If the AI cannot be used, please refer to the following reasons.
+
+If you are run the server, please use the official service. If it still doesn't work, please confirm that the following conditions are met:
+1. enable-command-block = true (server settings)
+2. Join the team as the red team
+3. No one joins the blue team
+
+If you still can't work, please use this command to reset the map: "/function settings: restart", if it still doesn't work, please reflect me, I will try to debug
+(The author was use a self-made instruction generator for the AI of this map. If you need research, please feel free to contact me.)

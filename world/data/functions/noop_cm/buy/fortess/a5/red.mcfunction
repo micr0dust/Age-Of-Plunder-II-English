@@ -1,0 +1,6 @@
+execute @e[tag=red2,c=1] ~ ~ ~ /summon minecraft:armor_stand ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1,Invisible:1,Tags:["rom","as","horse"]}
+execute @e[tag=red2,c=1] ~ ~ ~ /scoreboard players remove @e[tag=cmd] rfood 8
+playsound minecraft:block.note.pling record @p[team=red] ~ ~ ~ 1 0.749
+function noop_cm:chat_clear
+tellraw @p[team=red] ["",{"text":"---Fortress-------------------","color":"gold"},{"text":"\n"},{"text":"produce:","color":"dark_green"},{"text":"\n"},{"text":"[Infantry]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger ra25 set 1"}},{"text":" 8","color":"dark_red"},{"text":"\n"},{"text":"[Archer]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger ra28 set 1"}},{"text":" 8","color":"dark_red"},{"text":" 4","color":"dark_green"},{"text":"\n"},{"text":"[Llama Knight]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger ra27 set 1"}},{"text":" 10","color":"dark_red"},{"text":" 2","color":"gold"},{"text":"\n"},{"text":"Upgrade:","color":"dark_green"},{"text":"\n"},{"text":"[Spy] ","color":"yellow"},{"text":"This feature has not been updated","color":"gold"}]
+function noop_cm:cmend
