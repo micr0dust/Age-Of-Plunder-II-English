@@ -20,7 +20,9 @@ execute @e[tag=blue1] ~ ~ ~ execute @e[tag=v,r=4,c=1] ~ ~ ~ /summon minecraft:hu
 execute @e[tag=blue1] ~ ~ ~ execute @e[tag=v,r=4,c=1] ~ ~ ~ scoreboard players add @e[tag=cmd] bv 1
 execute @e[tag=blue1] ~ ~ ~ execute @e[tag=v,r=4,c=1] ~ ~ ~ /playsound custom.villagercreation ambient @a[team=blue,r=10]
 execute @e[tag=blue1] ~ ~ ~ kill @e[tag=v,r=4,c=1]
-
+#弓兵攻擊
+function noop_cm:acher if @e[tag=cmd,score_stop=0,score_stop_min=0]
+function noop_cm:unit_init
 #軍隊跟隨定時仇恨轉移
 execute @e[tag=bfollow] ~ ~ ~ execute @e[tag=s,team=blue,r=5] ~ ~ ~ summon snowball ~ ~4 ~ {ownerName:00000000-0000-04bc-0000-0000000004bc,Motion:[0.0,-1.0,0.0]}
 execute @e[tag=bfollow] ~ ~ ~ execute @e[tag=s,team=blue,r=5] ~ ~ ~ summon snowball ~ ~3 ~ {ownerName:00000000-0000-04bc-0000-0000000004bc,Motion:[0.0,-1.0,0.0]}

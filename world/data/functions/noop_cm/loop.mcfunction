@@ -130,8 +130,41 @@ execute @e[tag=bfollow] ~ ~ ~  tp @e[tag=bfollow,c=1] @p
 execute @e[tag=bvfollow] ~ ~ ~ tp @e[tag=bvfollow,c=1] @p
 execute @e[tag=rvfollow] ~ ~ ~  tp @e[tag=rvfollow,c=1] @p
 
+execute @e[tag=s,team=red] ~ ~ ~ scoreboard players set @e[tag=s,team=blue,r=1] fighting 1
+execute @e[tag=s,team=blue] ~ ~ ~ scoreboard players set @e[tag=s,team=red,r=1] fighting 1
+#長弓兵攻擊
+execute @e[tag=lar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=blue,c=1,r=20] rlarrow 1
+execute @e[tag=lar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=blue,c=1,r=20] arrow 1
+#奴隸兵攻擊
+execute @e[tag=mameluke,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=blue,c=1,r=7] rmarrow 1
+execute @e[tag=mameluke,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=blue,c=1,r=7] arrow 1
 #弓兵攻擊
-function noop_cm:acher if @e[tag=cmd,score_stop=0,score_stop_min=0]
+execute @e[tag=ar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=10] barrow 1
+execute @e[tag=ar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=10] arrow 1
+#馬弓騎兵
+execute @e[tag=bar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=12] bbrrow 1
+execute @e[tag=bar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=12] arrow 1
+#弓兵攻擊
+execute @e[tag=ar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[score_fighting=0,score_arrow=0,team=!red,tag=!horse,r=10,c=1] rarrow 1
+execute @e[tag=ar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[score_fighting=0,score_arrow=0,team=!red,tag=!horse,r=10,c=1] arrow 1
+#馬弓騎兵
+execute @e[tag=bar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[score_fighting=0,score_arrow=0,team=!red,tag=!horse,r=12,c=1] rbrrow 1
+execute @e[tag=bar,team=red,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[score_fighting=0,score_arrow=0,team=b,tag=!horse,r=12,c=1] arrow 1
+#長弓兵攻擊
+execute @e[tag=lar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=7] blarrow 1
+execute @e[tag=lar,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=7] arrow 1
+#奴隸兵攻擊
+execute @e[tag=mameluke,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=20] bmarrow 1
+execute @e[tag=mameluke,team=blue,c=1,score_shooted=0] ~ ~ ~ scoreboard players set @e[tag=!horse,score_fighting=0,score_arrow=0,team=!blue,c=1,r=20] arrow 1
+
+scoreboard players set @e[tag=lar,team=red,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=mameluke,team=red,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=ar,team=blue,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=bar,team=blue,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=ar,team=red,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=bar,team=red,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=lar,team=blue,c=1,score_shooted=0] shooted 1
+scoreboard players set @e[tag=mameluke,team=blue,c=1,score_shooted=0] shooted 1
 
 #特殊單位效果
 function noop_cm:buff
