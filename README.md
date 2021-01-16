@@ -1,3 +1,4 @@
+![](https://github.com/wuilliam104286/image_saves/blob/master/img/aop2/0.png)
 ### You brought troops and tried to establish a colony in the new world, but you encountered another fleet that also wanted to establish a colony here. It seems that this is an inevitable battle, build your base, and collect resources, we will train the army to drive them away!
 
 
