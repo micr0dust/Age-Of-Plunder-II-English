@@ -14,6 +14,7 @@ scoreboard players set @a info 0
 scoreboard players set @a put 0
 scoreboard players set @a restart 0
 scoreboard players set @a suicide 0
+scoreboard players set @a pciv -1
 
 
 scoreboard players enable @p[team=red] redstop
@@ -28,6 +29,8 @@ scoreboard players enable @p[team=blue] bluesurrenderc
 
 scoreboard players enable @p info
 scoreboard players enable @p suicide
+scoreboard players enable @a[team=red] pciv
+scoreboard players enable @a[team=blue] pciv
 
 function noop_cm:enable/produce
 function noop_cm:enable/market
@@ -68,6 +71,7 @@ scoreboard players set @a ra27 0
 scoreboard players set @a ba27 0
 scoreboard players set @a ra28 0
 scoreboard players set @a ba28 0
+scoreboard players set @a spy 0
 
 scoreboard players set @a ra5lvl 0
 scoreboard players set @a ba5lvl 0

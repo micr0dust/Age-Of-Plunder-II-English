@@ -31,4 +31,16 @@ execute @p[score_bspecial=5,score_bspecial_min=5] ~ ~ ~ function noop_cm:buy/for
 #阿拉伯
 execute @p[score_bspecial=6,score_bspecial_min=6] ~ ~ ~ function noop_cm:buy/noresoure unless @e[tag=cmd,score_bfood_min=12,score_bgold_min=6]
 execute @p[score_bspecial=6,score_bspecial_min=6] ~ ~ ~ function noop_cm:buy/fortess/as/blue if @e[tag=cmd,score_bfood_min=12,score_bgold_min=6]
+#---科技
+#間諜
+scoreboard players set @e[tag=cmd] AItest 0
+execute @e[team=red,type=player] ~ ~ ~ scoreboard players add @e[tag=cmd] AItest 1
+execute @e[team=red,tag=vill] ~ ~ ~ scoreboard players add @e[tag=cmd] AItest 1
+execute @e[team=red,tag=s] ~ ~ ~ scoreboard players add @e[tag=cmd] AItest 1
+execute @e[team=red,tag=building] ~ ~ ~ scoreboard players add @e[tag=cmd] AItest 1
+scoreboard players operation @e[tag=cmd] AItest -= @e[tag=cmd] bgold
+execute @p[team=blue,score_spy_min=1] ~ ~ ~ function noop_cm:buy/noresoure if @e[tag=cmd,score_AItest_min=1]
+execute @p[team=blue,score_spy_min=1] ~ ~ ~ function noop_cm:upgrade/b2spy unless @e[tag=cmd,score_AItest_min=1]
+scoreboard players set @e[tag=cmd] AItest 0
+
 

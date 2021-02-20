@@ -16,7 +16,8 @@ scoreboard players enable @a[team=blue] ba5lvl
 scoreboard players enable @a[team=red] ra5lvl
 scoreboard players enable @a[team=red] rspecial
 scoreboard players enable @a[team=blue] bspecial
-
+scoreboard players enable @a[team=red] spy
+scoreboard players enable @a[team=blue] spy
 
 
 

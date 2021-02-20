@@ -13,13 +13,14 @@ execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=cmd,score_AI=5,score_AI_min=5,score_bwood_min=110] ~ ~ ~ /function ai:build/build_test5
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=cmd,score_AI=6,score_AI_min=6,score_bwood_min=110] ~ ~ ~ /function ai:build/build_test6
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=cmd,score_AI=7,score_AI_min=7,score_bwood_min=110] ~ ~ ~ /function ai:build/build_test7
+execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=cmd,score_AI=202,score_AI_min=202,score_bwood_min=110] ~ ~ ~ /function ai:build/build_test2_2
 
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=cmd,score_AI=100,score_AI_min=100,score_bwood_min=110] ~ ~ ~ /function ai:build/build_test_detect
 
 
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=blue1,c=1] ~ ~ ~ /execute @e[tag=s,team=red,r=50] ~ ~ ~ /scoreboard players set @e[tag=cmd] AI 1
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_canend_min=1] ~ ~ ~ execute @e[tag=s,team=blue] ~ ~ ~  /function ai:detect unless @e[tag=s,team=red]
-execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=100,score_AI_min=100,score_canend_min=1] ~ ~ ~ /function ai:def if @e[tag=s,team=red]
+#execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_canend_min=1] ~ ~ ~ /execute @e[tag=blue1,c=1] ~ ~ ~ /execute @e[tag=s,team=red,r=50] ~ ~ ~ /scoreboard players set @e[tag=cmd] AI 1
+#execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=1,score_AI_min=1,score_canend_min=1] ~ ~ ~ execute @e[tag=s,team=blue] ~ ~ ~  /function ai:detect unless @e[tag=s,team=red]
+#execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AI=100,score_AI_min=100,score_canend_min=1] ~ ~ ~ /function ai:def if @e[tag=s,team=red]
 
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AInor=2,score_AInor_min=2,score_canend_min=1] ~ ~ ~ /execute @e[tag=red1,c=1] ~ ~ ~ /execute @e[tag=s,team=blue,r=50] ~ ~ ~ /scoreboard players set @e[tag=cmd] AI 2
 execute @e[tag=cmd,score_gamemode=1,score_gamemode_min=1,score_AInor=3,score_AInor_min=3,score_canend_min=1] ~ ~ ~ /execute @e[tag=red1,c=1] ~ ~ ~ /execute @e[tag=s,team=blue,r=50] ~ ~ ~ /scoreboard players set @e[tag=cmd] AI 3

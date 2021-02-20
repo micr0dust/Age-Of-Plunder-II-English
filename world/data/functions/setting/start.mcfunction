@@ -50,5 +50,9 @@ execute @e[tag=cmd,c=1,score_mode=2,score_mode_min=2] ~ ~ ~ execute @e[tag=red1,
 kill @e[tag=npc]
 scoreboard players set @e[tag=cmd] gm 0
 function noop_cm:civ_setting/ctrl
+#快取
+kill @e[tag=load]
+summon armor_stand 44 20 -153 {PersistenceRequired:1,Tags:["load"],Invulnerable:1}
+function setting:load
 #ai
 

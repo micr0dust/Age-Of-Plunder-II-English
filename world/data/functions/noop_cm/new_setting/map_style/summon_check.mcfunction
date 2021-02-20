@@ -4,8 +4,9 @@
 #########################################################################################################
 function noop_cm:chat_clearall
 function noop_cm:chat_clearall
-tellraw @p {"translate":"aop.mapstyle.generate","color":"yellow","clickEvent":{"action":"run_command","value":"/setblock 37 25 -208 minecraft:redstone_block"}}
-
+tellraw @a {"translate":"aop.terrain.finish","color":"yellow"}
+playsound minecraft:block.note.pling record @p ~ ~ ~ 1 0.749
+function noop_cm:new_setting/map_style/clone
 
 
 

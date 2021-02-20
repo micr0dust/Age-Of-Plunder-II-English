@@ -77,6 +77,8 @@ function noop_cm:trigger/fortress_r if @p[score_ra28_min=1]
 function noop_cm:trigger/fortress_b if @p[score_ba28_min=1]
 function noop_cm:trigger/fortress_r if @p[score_rspecial_min=1]
 function noop_cm:trigger/fortress_b if @p[score_bspecial_min=1]
+function noop_cm:trigger/fortress_r if @p[score_spy_min=1,team=red]
+function noop_cm:trigger/fortress_b if @p[score_spy_min=1,team=blue]
 #-----------------------------------------
 
 #市集-------------------------------------
@@ -168,6 +170,9 @@ scoreboard players set @e[tag=mameluke,team=blue,c=1,score_shooted=0] shooted 1
 
 #特殊單位效果
 function noop_cm:buff
+
+function noop_cm:new_setting/civ/rciv if @p[team=red,score_pciv_min=0]
+function noop_cm:new_setting/civ/bciv if @p[team=blue,score_pciv_min=0]
 
 #分數計算
 scoreboard players set @e[tag=cmd] rp 0

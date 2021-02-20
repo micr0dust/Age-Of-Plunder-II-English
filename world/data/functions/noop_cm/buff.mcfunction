@@ -15,4 +15,11 @@ effect @e[tag=lar,team=blue] 1 20 1 true
 
 #奴隸兵
 effect @e[tag=horse,score_ctrl_min=1] minecraft:slowness 0 0 true
+#間諜發光
+execute @e[tag=cmd,c=1,score_rspy_min=1] ~ ~ ~ effect @e[tag=vill,team=blue] minecraft:glowing 3 1 true
+execute @e[tag=cmd,c=1,score_rspy_min=1] ~ ~ ~ effect @e[tag=building,team=blue] minecraft:glowing 3 1 true
+execute @e[tag=cmd,c=1,score_rspy_min=1] ~ ~ ~ effect @e[tag=s,team=blue] minecraft:glowing 3 1 true
 
+execute @e[tag=cmd,c=1,score_bspy_min=1] ~ ~ ~ effect @e[tag=vill,team=red] minecraft:glowing 3 1 true
+execute @e[tag=cmd,c=1,score_bspy_min=1] ~ ~ ~ effect @e[tag=building,team=red] minecraft:glowing 3 1 true
+execute @e[tag=cmd,c=1,score_bspy_min=1] ~ ~ ~ effect @e[tag=s,team=red] minecraft:glowing 3 1 true

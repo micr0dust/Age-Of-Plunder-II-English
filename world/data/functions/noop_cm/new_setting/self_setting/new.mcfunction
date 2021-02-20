@@ -9,7 +9,7 @@ scoreboard players set @p click_self_list 1
 scoreboard players set @p zenvirsound 0
 
 #--*背景音樂
-scoreboard players set @p zbgm 0
+scoreboard players set @p zbgm 1
 
 #--道具範圍提示
 scoreboard players set @p ztool_range 0

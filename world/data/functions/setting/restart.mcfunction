@@ -9,7 +9,7 @@ scoreboard players set @e[tag=rfarm] farm 0
 scoreboard players set @e[tag=bfarm] farm 0
 kill @e[tag=s]
 kill @e[tag=building]
-kill @e[type=!Player]
+kill @e[type=!Player,tag=!load]
 fill 38 30 -167 73 40 -202 minecraft:air 0 replace
 fill 38 30 -131 73 40 -166 minecraft:air 0 replace
 fill 74 30 -167 109 40 -202 minecraft:air 0 replace
